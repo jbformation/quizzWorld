@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Quizz World</title>
+</head>
+<body id="body">
+
+    <h1 class="text-light text-center mt-5">Quizz World</h1>
+
+    <!--Bien mettre l'ID dans la première DIV qui référence l'entiereté du quizz-->
+    <!-- Référencer les noms des img avec le meme nom que JSON pour que le formulaire soit actif-->
+
+    <div class="container d-flex justify-content-between flex-wrap mt-5">
+        <!--Application web-->
+        <div id="quizzweb" class="col-12 col-sm-6 col-md-3 col-lg-3 application rounded-5 text-center mb-2">
+            <h2 class="text-center text-light mt-2">Appli web</h2>
+            <img class="rounded-5 w-75" src="img/quizzweb.jpg">
+            <div>
+                <input type="radio" name="appliweb" value="débutant"> <span class="text-light">Débutant</span>
+                <input type="radio" name="appliweb" value="confirmé"> <span class="text-light">Confirmé</span>
+                <input type="radio" name="appliweb" value="expert"> <span class="text-light">Expert</span>
+            </div>
+        </div>
+
+        <!--JavaScript-->
+        <div id="quizzjavascript" class="col-12 col-sm-6 col-md-3 col-lg-3 application rounded-5 text-center mb-2">
+            <h2 class="text-center text-light mt-2">JavaScript &nbsp;</h2>
+            <img class="rounded-5 w-75" src="img/quizzjavascript.jpg">
+            <div>
+                <input type="radio" name="javascript" value="débutant"> <span class="text-light">Débutant</span>
+                <input type="radio" name="javascript" value="confirmé"> <span class="text-light">Confirmé</span>
+                <input type="radio" name="javascript" value="expert"> <span class="text-light">Expert</span>
+            </div>
+        </div>
+
+        <!--Le XXème siècle-->
+        <div id="quizzdates20" class="col-12 col-sm-6 col-md-3 col-lg-3 application rounded-5 text-center mb-2">
+            <h2 class="text-center text-light mt-2">Le XXème siècle</h2>
+            <img class="rounded-5 w-75" src="img/quizzdates20.jpg">
+            <div>
+                <input type="radio" name="xxSiecle" value="débutant"> <span class="text-light">Débutant</span>
+                <input type="radio" name="xxSiecle" value="confirmé"> <span class="text-light">Confirmé</span>
+                <input type="radio" name="xxSiecle" value="expert"> <span class="text-light">Expert</span>
+            </div>
+        </div>
+
+        <!--Nintendo-->
+        <div id="quizznintendo" class="col-12 col-sm-6 col-md-3 col-lg-3 application rounded-5 text-center mb-2">
+            <h2 class="text-center text-light mt-2">Nintendo</h2>
+            <img class="rounded-5 w-75" src="img//quizznintendo.jpg">
+            <div>
+                <input type="radio" name="nintendo" value="débutant"> <span class="text-light">Débutant</span>
+                <input type="radio" name="nintendo" value="confirmé"> <span class="text-light">Confirmé</span>
+                <input type="radio" name="nintendo" value="expert"> <span class="text-light">Expert</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container d-flex justify-content-between flex-wrap">
+
+        <!--Trouver le nombre-->
+        <div id="quizznombres" class="col-12 col-sm-6 col-md-3 col-lg-3 application rounded-5 text-center mt-2">
+            <h2 class="text-center text-light mt-2">Trouver le nombre</h2>
+            <img class="rounded-5 w-75" src="img/quizznombres.jpg">
+            <div>
+                <input type="radio" name="nombres" value="débutant"> <span class="text-light">Débutant</span>
+                <input type="radio" name="nombres" value="confirmé"> <span class="text-light">Confirmé</span>
+                <input type="radio" name="nombres" value="expert"> <span class="text-light">Expert</span>
+            </div>
+        </div>
+
+        <!--Microsoft-->
+        <div id="quizzmicrosoft" class="col-12 col-sm-6 col-md-3 col-lg-3 application rounded-5 text-center mt-2">
+            <h2 class="text-center text-light mt-2">Microsoft</h2>
+            <img class="rounded-5 w-75" src="img//quizzmicrosoft.jpg">
+            <div>
+                <input type="radio" name="microsoft" value="débutant"> <span class="text-light">Débutant</span>
+                <input type="radio" name="microsoft" value="confirmé"> <span class="text-light">Confirmé</span>
+                <input type="radio" name="microsoft" value="expert"> <span class="text-light">Expert</span>
+            </div>
+        </div>
+
+        <!--PHP-->
+        <div id="quizzphp" class="col-12 col-sm-6 col-md-3 col-lg-3 application rounded-5 text-center mt-2">
+            <h2 class="text-center text-light mt-2">PHP</h2>
+            <img class="rounded-5 w-75" src="img/quizzphp.jpg">
+            <div>
+                <input type="radio" name="php" value="débutant"> <span class="text-light">Débutant</span>
+                <input type="radio" name="php" value="confirmé"> <span class="text-light">Confirmé</span>
+                <input type="radio" name="php" value="expert"> <span class="text-light">Expert</span>
+            </div>
+        </div>
+
+        <!--Meandres d'internet-->
+        <div id="quizzinternet" class="col-12 col-sm-6 col-md-3 col-lg-3 application rounded-5 text-center mt-2">
+            <h2 class="text-center text-light mt-2">Méandres d'internet</h2>
+            <img class="rounded-5 w-75" src="img/quizzinternet.jpg">
+            <div>
+                <input type="radio" name="internet" value="débutant"> <span class="text-light">Débutant</span>
+                <input type="radio" name="internet" value="confirmé"> <span class="text-light">Confirmé</span>
+                <input type="radio" name="internet" value="expert"> <span class="text-light">Expert</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!--Ce framework jquery pour le draggable des questions-->
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
