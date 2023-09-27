@@ -1,6 +1,7 @@
 const radioButtons = document.querySelectorAll('input[type="radio"]');
 let btnLancement = document.getElementById("btnLancement");
 let score = 0;
+let numeroQuestions = 1;
 
 //-- Choix des boutons niveaux pour pouvoir commencer le quizz --//
 for (i = 0; i < radioButtons.length; i++) {
@@ -27,10 +28,10 @@ for (i = 0; i < radioButtons.length; i++) {
               "</div>" +
               '<div class="fs-2 text-light text-center">' + prenom + ", " + "Vous allez pouvoir démarrer ce quizz!" +
               '</div><br/>' +
-              '<div class="d-flex justify-content-center"><img class="container rounded-5" src="img/' + radioButtons[buttonId].parentElement.parentElement.id + '.jpg">' + 
+              '<div class="d-flex justify-content-center"><img class="container rounded-5 w-50" src="img/' + radioButtons[buttonId].parentElement.parentElement.id + '.jpg">' + 
               '</div><br/><br/>' +
               '<button id="btnLancement" class="container d-flex justify-content-center w-25 text-light" type="submit">démarrer le quizz</button>';
-
+            console.log("./" + radioButtons[buttonId].parentElement.parentElement.id + ".json");
             btnLancement = document.getElementById("btnLancement");
             btnLancement.addEventListener("click", function () {
               //-------------Choisir mes 3 niveaux de =difficultés------------//
@@ -60,6 +61,7 @@ for (i = 0; i < radioButtons.length; i++) {
                     '<h2 class="text-center text-light mt-5 fs-1">Quizz World</h2><br/><br/>' +
                     '<div class="text-center fs-2 text-light">' + response.thème + " niveau " + radioButtons[buttonId].value +
                     "</div><br/>" +
+                    '<div class="text-center fs-2 text-light">' + 'Question n° ' + numeroQuestions + '</div><br/>' +
                     '<div class="text-center fs-3 text-light">' + quizzNiveauSelect.question +
                     "</div><br/><br/>" +
                     '<div class="container text-center text-light" id="anecdote"></div>' +
@@ -124,6 +126,7 @@ for (i = 0; i < radioButtons.length; i++) {
                     btnSuivant.addEventListener("click", function () {
                       // --On passe à la question suivante-- //
                       i++;
+                      numeroQuestions++
                       //  --On affiche la prochaine question-- //
                       afficherQuestion(i); 
                     });
